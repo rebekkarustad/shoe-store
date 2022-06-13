@@ -1,0 +1,21 @@
+.admin-wrap {
+  background-color: #eee7d6;
+  text-align: end;
+  padding: 10px;
+}
+
+.admin-wrap a {
+  color: #b09375;
+  text-decoration: none;
+}
+
+.admin-wrap a:hover {
+  color: #8d877b;
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  gap: 40px;
+  margin-left: 140px;
+}
+/*# sourceMappingURL=nav.css.map */

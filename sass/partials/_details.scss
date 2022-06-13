@@ -1,0 +1,53 @@
+.details {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 2fr 1fr;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+      @media (min-width: $desktop-width) {
+        grid-row: 1 / 5;
+        height: 500px;
+    }
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #8d877b;
+      margin-top: -25px;
+    }
+    button {
+      background-color: #b09375;
+      color: #fff;
+      border-radius: 40px;
+      border: none;
+      font-size: 1.6rem;
+      width: 300px;
+      height: 50px;
+    }
+  }
+  
+  .edit-button {
+      background-color: $color-light;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+      text-align: center;
+      padding: 5px;
+      text-decoration: none;
+      @media (min-width: $desktop-width) {
+        grid-column-start: 2;
+      }
+  }
+  .edit-button:hover {
+      background-color: $color-primary;
+      color: $color-light;
+  }
